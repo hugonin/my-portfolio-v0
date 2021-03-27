@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+<body>
+    <header>
+        <a href="index.html" class="logo">My Company</a>
+        <svg height="32px" id="menu-btn" class="open" viewBox="0 0 32 32">
+            <path fill="#14274e" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+        </svg>
+        <nav id="nav" class="nav">
+            <svg viewBox="0 0 24 24" id="exit-btn" class="exit">
+                <path id="exit" fill="#14274e" d="M14.8,12l3.6-3.6c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L12,9.2L8.4,5.6c-0.8-0.8-2-0.8-2.8,0   c-0.8,0.8-0.8,2,0,2.8L9.2,12l-3.6,3.6c-0.8,0.8-0.8,2,0,2.8C6,18.8,6.5,19,7,19s1-0.2,1.4-0.6l3.6-3.6l3.6,3.6   C16,18.8,16.5,19,17,19s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L14.8,12z" />
+            </svg>
+            <ul class="nav__list">
+                <li class="nav__item active"><a href="index.html" class="nav__link ">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home" >
+        <h1 class="section__title section__title--intro">
+            The title <strong>of my project</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
+        <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+        <img src="img/portfolio-details.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
+        <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+    </div>
+    
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section__title section__title--contact">Contact</h2>
+        <p class="section__subtitle section__subtitle--contact">Interested in My Work?</p>
+                
+        <div class="contact-form">
+            <form class="contact-form" action="#" method="POST">
+                    
+                <label class="fname-label" for="fname"></label>
+                <input class="fname-input" id="fname" type="text" placeholder="Your name">
+                    
+                <label class="email-label" for="email"></label>
+                <input class="email-input" id="email" type="email" placeholder="Your email address">
+                    
+                <label class="message-label" for="message"></label>
+                <textarea class="message-textarea" id="message" placeholder="Leave Me A Message "></textarea>
+                    
+                <button class="btn btn-primary btn-form">send</button>
+            </form>
+                 
+        </div>
+         
+    </section> 
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-main">
+                <h3>My Company</h3>
+                <p class="footer-fineprint"></p>
+            </div>
+                
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+        
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+        
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </li>        
+                 
+            </ul>
+        
+        </footer>
+         
+    
+        <script>
+            document.querySelector('.footer-fineprint').innerHTML = `&copy;${new Date().getFullYear() } | Made with <span aria-label="love" role="image">&#128150;</span>by Hugonin`;
+        </script>
+
+    
+</body>
+</html>
