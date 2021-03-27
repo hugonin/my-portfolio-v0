@@ -11,8 +11,13 @@
 ## General info
 The site is built without using any web frameworks. 
 
+<<<<<<< HEAD
 ![Site capture](/img/preview.png)
 Format: ![Alt Text](url)
+=======
+![Site capture](/img/screencapture.png)
+
+>>>>>>> 1543242f4c2466b921e4cc26d9891a85f95e720c
 
 ## Features
 List of features:
