@@ -12,7 +12,7 @@
 The site is built without using any web frameworks. 
 
 ![Site capture](/img/screencapture.png)
-Format: ![Alt Text](url)
+
 
 ## Features
 List of features:
